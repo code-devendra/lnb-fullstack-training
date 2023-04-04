@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 185, 185);
+}
+
+.container {
+    width: 700px;
+    height: 690px;
+    margin: 0 auto;
+    margin-top: 8px;
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    box-shadow: 0 0 40px 3px black;
+}
+
+.black-box {
+    background-color: black;
+}
+
+.white-box {
+    background-color: white;
+}
+
+.box:hover {
+    cursor: pointer;
+    border: 3px dashed red;
+}

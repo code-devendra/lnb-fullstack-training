@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-size: 16px;
+            color: #222222;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 30px auto 0 auto;
+        }
+
+        .image {
+            max-width: 25vw;
+            min-width: 300px;
+            align-self: center;
+            margin-bottom: 50px;
+        }
+
+        .info {
+            text-align: center;
+        }
+
+        .line {
+            width: 1px;
+        }
+
+        .line-1 {
+            height: 100px;
+            margin: 20px auto;
+            border-right: 4px dashed black;
+        }
+
+        .line-2 {
+            height: 70px;
+            margin: 20px auto;
+            border-right: 4px dashed black;
+        }
+
+        .btn {
+            width: 200px;
+            align-self: center;
+            padding: 15px;
+            background-color: #6173F4;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="image"
+            src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=400/uploads/users/769/posts/35673/preview_image/404%20page%20b.jpg"
+            alt="404 page image">
+        <p class="info">The page you were looking for was mover or doesn't exist.</p>
+        <div class="line line-1"></div>
+        <p class="info">Let's get you back.</p>
+        <div class="line line-2"></div>
+        <button class="btn">Back to home</button>
+    </div>
+</body>
+
+</html>

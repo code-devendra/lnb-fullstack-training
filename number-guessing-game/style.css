@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgb(127, 127, 233), rgb(169, 118, 206));
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.2;
+}
+
+.container {
+    width: 85vw;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    border-bottom: 5px solid rgb(149, 52, 185);
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.number {
+    width: 50px;
+    font-size: 25px;
+    border: 2px dashed black;
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+main {
+    text-align: center;
+}
+
+.guess {
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.match {
+    display: block;
+    font-size: 20px;
+    margin: 15px auto;
+    padding: 10px;
+    background: linear-gradient(90deg, rgb(127, 127, 233), rgb(169, 118, 206));
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.disable {
+    cursor: not-allowed;
+    background: rgb(167, 165, 165);
+}
+
+.message {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.msg-score {
+    font-size: 18px;
+    color: rgb(255, 0, 0);
+}
+
+.again {
+    color: rgb(148, 153, 153);
+    margin-top: 40px;
+}
+
+.again:hover {
+    color: rgb(84, 74, 141);
+    cursor: pointer;
+}

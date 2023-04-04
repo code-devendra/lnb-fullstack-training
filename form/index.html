@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro - FORM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>SUBMIT YOUR DETAILS</h1>
+    </header>
+    <main class="container">
+        <form action="#">
+            <div class="form-group">
+                <label for="name">Name </label><br>
+                <input class="form-input" type="text" name="name" id="name" placeholder="First Name..." required>
+                <input class="form-input" type="text" name="name" id="name" placeholder="Last Name...">
+            </div>
+            <div class="form-group">
+                <label for="email">Email </label><br>
+                <input type="email" name="email" id="email" class="form-input" placeholder="Email..." required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone no. </label><br>
+                <input type="number" name="phone-no" id="phone" class="form-input" placeholder="Phone no..."
+                    min="1000000000" max="9999999999" required>
+            </div>
+            <div class="form-group">
+                <label for="courses">Which course did you like </label><br>
+                <select class="form-input" name="course" id="courses" required>
+                    <option value="" selected disabled>Select your course</option>
+                    <option value="web">Web Development</option>
+                    <option value="app">App Development</option>
+                    <option value="java">Java Software Development</option>
+                    <option value="data-science">Data Science</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Your current level in the following skills <span>(from 0 to 10)</span> </p>
+                <div class="form-subgroup">
+                    <label for="c">C</label>
+                    <input class="range-input" type="range" name="c" id="c" min="0" max="10" value="0" required>
+                </div>
+                <div class="form-subgroup">
+                    <label for="cpp">C++</label>
+                    <input class="range-input" type="range" name="cpp" id="cpp" min="0" max="10" value="0" required>
+                </div>
+                <div class="form-subgroup">
+                    <label for="java">Java</label>
+                    <input class="range-input" type="range" name="java" id="java" min="0" max="10" value="0" required>
+                </div>
+                <div class="form-subgroup">
+                    <label for="html-css">HTML/CSS</label>
+                    <input class="range-input" type="range" name="html-css" id="html-css" min="0" max="10" value="0"
+                        required>
+                </div>
+                <div class="form-subgroup">
+                    <label for="js">JavaScript</label>
+                    <input class="range-input" type="range" name="js" id="js" min="0" max="10" value="0" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Address </label><br>
+                <textarea class="text-box" name="address" id="address" cols="30" rows="5" placeholder="Address..."
+                    required></textarea>
+            </div>
+            <div class="form-group">
+                <input class="button" type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
