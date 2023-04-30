@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion-example</title>
+    <link rel="stylesheet" href="./accordion.css">
+</head>
+
+<body>
+    <div class="accordion">
+        <div class="item">
+            <p class="sno">01</p>
+            <p class="head-text">Lorem ipsum dolor sit amet elit</p>
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 arrow-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                </svg>
+            </button>
+
+            <div class="hidden-text">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="item">
+            <p class="sno">01</p>
+            <p class="head-text">Lorem ipsum dolor sit amet elit</p>
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 arrow-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                </svg>
+            </button>
+
+            <div class="hidden-text">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="item">
+            <p class="sno">01</p>
+            <p class="head-text">Lorem ipsum dolor sit amet elit</p>
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 arrow-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                </svg>
+            </button>
+
+            <div class="hidden-text">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        const acc = document.getElementsByClassName('item');
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener('click', function () {
+                this.classList.toggle('show');
+            });
+        }
+    </script>
+</body>
+
+</html>

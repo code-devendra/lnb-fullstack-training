@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/person-bounding-box.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <title>Bootstrap - Resume</title>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-sm bg-dark">
+        <a class="navbar-brand mx-auto" data-bs-toggle="collapse" data-bs-target="#navigation-bar" href=""><i
+                class="bi bi-fingerprint ps-4 fs-3 text-warning"></i></a>
+        <div class=" collapse navbar-collapse justify-content-between" id="navigation-bar">
+            <ul class="navbar-nav nav-pills">
+                <li class="nav-item"><a class="nav-link text-light btn btn-warning fw-bold px-3" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-light btn btn-warning fw-bold px-3"
+                        href="#skills">Skills</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-light btn btn-warning fw-bold px-3"
+                        href="#education">Education</a>
+                </li>
+                <li class="nav-item dropdown" data-bs-toggle="dropdown">
+                    <a class="nav-link btn btn-warning text-light fw-bold px-3 dropdown-toggle"
+                        href="#projects">Projects</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Project 1</a>
+                        <a class="dropdown-item" href="#">Project 2</a>
+                        <a class="dropdown-item" href="#">Project 3</a>
+                        <a class="dropdown-item" href="#">Project 4</a>
+                    </div>
+
+                </li>
+                <li class="nav-item"><a class="nav-link btn btn-warning text-light fw-bold px-3"
+                        href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <form class="me-3">
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button type="button" class="btn btn-warning"><i class="bi bi-search"></i></button>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <!-- NAVIGATION END -->
+
+    <!-- HEAD -->
+
+    <section class="bg-info">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center" style="height: 100vh;">
+                <div class="col text-center">
+                    <p class="lead text-dark mb-1">Hi, I'm</p>
+                    <p><span class="display-2 text-white fw-bold">Devendra</span></p>
+
+                    <h2 class="text-danger lead fw-bold fst-italic">A professional full stack web Developer</h2>
+                    <a href="#" class="btn btn-outline-warning px-3 m-3">Learn More</a>
+                    <a href="#" class="btn btn-outline-success px-3 m-3">Contact Me</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HEAD END -->
+
+    <!-- SKILLSET START -->
+
+    <section class="bg-light" id="skills">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center m-3">
+                    <h1 class="text-warning display-4">Skills</h1>
+                    <p class="lead text-secondary ">This is an overview of my skillset which you may find very useful
+                        and
+                        employable</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="bi bi-laptop fs-1 text-secondary"></i>
+                    <h2 class="text-secondary">Frontend Development</h2>
+                    <div class="row">
+                        <div class="col">
+                            <div class="progress bg-secondary w-50 mx-auto my-3">
+                                <div class="progress-bar bg-warning" style="width: 90%;">HTML</div>
+                            </div>
+                            <div class="progress bg-secondary w-50 mx-auto my-3">
+                                <div class="progress-bar bg-warning" style="width: 75%;">CSS</div>
+                            </div>
+                            <div class="progress bg-secondary w-50 mx-auto my-3">
+                                <div class="progress-bar bg-warning" style="width: 90%;">JAVASCRIPT</div>
+                            </div>
+                            <div class="progress bg-secondary w-50 mx-auto my-3">
+                                <div class="progress-bar bg-warning" style="width: 70%;">BOOTSTRAP</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-database fs-1 text-secondary"></i>
+                    <h2 class="text-secondary">Database Admin</h2>
+                    <div class="row">
+                        <div class="col">
+                            <div class="progress bg-secondary w-50 mx-auto my-3">
+                                <div class="progress-bar bg-info" style="width: 85%;">Oracle SQL</div>
+                            </div>
+                            <div class="progress bg-secondary w-50 mx-auto my-3">
+                                <div class="progress-bar bg-info" style="width: 90%;">MYSQL</div>
+                            </div>
+                            <div class="progress bg-secondary w-50 mx-auto my-3">
+                                <div class="progress-bar bg-info" style="width: 90%;">MongoDB</div>
+                            </div>
+                            <div class="progress bg-secondary w-50 mx-auto my-3">
+                                <div class="progress-bar bg-info" style="width: 75%;">PostgreSQL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-hdd-rack fs-1 text-secondary"></i>
+                    <h2 class="text-secondary">Backend Development</h2>
+                    <div class="row">
+                        <div class="col">
+                            <div class="progress bg-secondary w-50 mx-auto my-3">
+                                <div class="progress-bar bg-warning" style="width: 90%;">NodeJS</div>
+                            </div>
+                            <div class="progress bg-secondary w-50 mx-auto my-3">
+                                <div class="progress-bar bg-warning" style="width: 80%;">ExpressJS</div>
+                            </div>
+                            <div class="progress bg-secondary w-50 mx-auto my-3">
+                                <div class="progress-bar bg-warning" style="width: 95%;">Django</div>
+                            </div>
+                            <div class="progress bg-secondary w-50 mx-auto my-3">
+                                <div class="progress-bar bg-warning" style="width: 75%;">Socket</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLSET END -->
+
+    <!-- EDUCATION START -->
+
+    <section class="bg-info-subtle p-3 text-center" id="education">
+        <div class="container-fluid">
+            <div class="row px-5">
+                <div class="col text-center m-3">
+                    <h1 class="text-warning display-4">Education</h1>
+                    <p class="lead text-secondary ">These are my academic results from my learning days which you may
+                        find helpfull</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-8 mb-3 mx-auto">
+                    <div class="card">
+                        <img src="https://static.toiimg.com/photo/msid-52290325/52290325.jpg" class="card-img-top"
+                            alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Secondary</h3>
+                            <p class="card-subtitle text-secondary">Completed from ASP at 72%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-8 mb-3 mx-auto">
+                    <div class="card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4345/4345672.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Graduation</h3>
+                            <p class="card-subtitle text-secondary">Completed from JEC at 9.2 CGPA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-8 mb-3 mx-auto">
+                    <div class="card">
+                        <img src="https://static.toiimg.com/photo/msid-52290325/52290325.jpg" class="card-img-top"
+                            alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">H-Secondary</h3>
+                            <p class="card-subtitle text-secondary">Completed from ASP at 74%</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION END -->
+
+    <!-- PROJECT START -->
+
+    <section class="bg-info">
+        <div class="carousel slide mx-auto " data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption mb-5 p-3 d-none d-sm-block">
+                        <h5 class="lead text-dark display-3">Project 1</h5>
+                        <p class="lead text-dark">This project is about web Development</p>
+                        <p class="text-dark">It is a good project Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Libero dolores numquam error voluptatibus obcaecati quos?</p>
+                    </div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" class="d-block w-25" alt="">
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption mb-5 p-3 d-none d-sm-block">
+                        <h5 class="display-3 text-dark">Project 2</h5>
+                        <p class="lead text-dark">This project is about web Development</p>
+                        <p class="lead text-dark">It is a good project</p>
+                    </div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" class="d-block w-25" alt="">
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption mb-5 p-3 d-none d-sm-block">
+                        <h5 class="display-3text-dark">Project 3</h5>
+                        <p class="lead text-dark">This project is about web Development</p>
+                        <p class="lead text-dark">It is a good project</p>
+                    </div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" class="d-block w-25" alt="">
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption mb-5 p-3 d-none d-sm-block">
+                        <h5 class="display-3 text-dark">Project 4</h5>
+                        <p class="lead text-dark">This project is about web Development</p>
+                        <p class="lead text-dark">It is a good project</p>
+                    </div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" class="d-block w-25" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT END -->
+
+    <!-- CONTACT FORM START -->
+
+    <section class="bg-secondary" id="contact">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center m-3">
+                    <h1 class="text-warning display-4">Contact me</h1>
+                    <p class="lead text-light">Feel free to contact me by filling this form below.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form class="text-light">
+                        <div class="form-group">
+                            <label for="name" class="mb-2 text-light">Name</label>
+                            <input type="text" id="name" class="form-control mb-2">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="mb-2 text-light">Email</label>
+                            <input type="email" id="email" class="form-control mb-2">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="mb-2 text-light">Message</label>
+                            <textarea id="message" rows="4" class="form-control mb-4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM END -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

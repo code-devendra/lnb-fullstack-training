@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: small Arial, sans-serif;
+    color: rgb(139, 101, 71);
+    background-color: rgb(215, 248, 189);
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    background-color: rgb(166, 227, 117);
+    margin-bottom: 2em;
+}
+
+#logo {
+    margin: 0 1em 0 0.5em;
+    padding: 2em 0 1em 1em;
+    display: block;
+    background: url(./images/curl.gif) 100% 100% no-repeat;
+}
+
+#navlinks {
+    background-color: rgb(121, 135, 147);
+    color: white;
+    padding: .5em 0 .5em 1em;
+    margin: 0;
+}
+
+#navlinks li {
+    font-weight: bold;
+    border-right: 1px solid rgb(116, 210, 119);
+    display: inline;
+    padding-right: 0.5em;
+    margin-right: 1em;
+}
+
+#navlinks a {
+    color: rgb(133, 207, 73);
+}
+
+#today {
+    color: white;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 1em;
+    margin-top: -1.7em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#content {
+    /* float: left; */
+    padding: 0 0em 1em;
+    margin: 0;
+    margin-right: 1em;
+    width: 80%;
+}
+
+#content h1 b {
+    color: rgb(116, 210, 119);
+}
+
+#content h1 {
+    background-color: white;
+    margin: 0;
+    padding: 0.4em;
+}
+
+#content h2 {
+    border-bottom: 1px solid rgb(116, 210, 119);
+    padding-bottom: 0.5em;
+}
+
+.container-mini {
+    display: flex;
+}
+
+#content img.side {
+    /* float: left; */
+    margin: 1em;
+}
+
+#right-content {
+    /* float: left; */
+    width: 18%;
+}
+
+#right-content form .text {
+    width: 10em;
+}
+
+#search {
+    margin: 0;
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(151, 124, 203);
+}
+
+#search input {
+    padding: .3em;
+}
+
+#tod,
+#archive {
+    color: white;
+    background-color: rgb(83, 70, 70);
+    padding-bottom: 1em;
+}
+
+#tod h3,
+#archive h3 {
+    background-color: rgb(151, 124, 203);
+    padding: .5em;
+    font-size: larger;
+    margin-bottom: 0;
+}
+
+#tod h4 {
+    padding: .4em 0;
+    margin: 0 auto;
+    width: 18em;
+    border-bottom: 1px solid white;
+}
+
+#tod p {
+    width: 18em;
+    margin: 0.4em auto;
+}
+
+#tod img {
+    display: block;
+    margin: 0 auto;
+}
+
+#archive {
+    margin-bottom: 3em;
+}
+
+#archive table {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: .5em;
+}
+
+#archive table caption {
+    padding-top: 1em;
+    font-weight: bold;
+}
+
+#archive table td {
+    background-color: rgb(105, 99, 99);
+    border: .1px solid rgb(159, 146, 146);
+    color: black;
+}
+
+#archive table td a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#footer {
+    clear: both;
+    background-color: rgb(166, 227, 117);
+    height: 3em;
+}
+
+#footer p {
+    padding: 1.2em 1em 0 1.2em;
+}
+
+#footer p a {
+    color: black;
+    text-decoration: underline;
+}
