@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "FoodName": "Paneer Masala",
+    "from": "Punjab",
+    "quantity": "250 ",
+    "price": "300"
+  },
+  {
+    "id": 1,
+    "FoodName": "Gravy Gatta ",
+    "from": "Rajasthan",
+    "quantity": "200",
+    "price": "150"
+  },
+  {
+    "id": 2,
+    "FoodName": "Chicken Biryani",
+    "from": "Hyderabad",
+    "quantity": "500",
+    "price": "140"
+  },
+  {
+    "id": 3,
+    "FoodName": "Burger",
+    "from": "Pune",
+    "quantity": "200",
+    "price": "40"
+  },
+  {
+    "id": 4,
+    "FoodName": "Edly",
+    "from": "Chennai",
+    "quantity": "400",
+    "price": "160"
+  },
+  {
+    "id": 5,
+    "FoodName": "Malai Pulao",
+    "from": "Kashmir",
+    "quantity": "300",
+    "price": "250"
+  }
+]

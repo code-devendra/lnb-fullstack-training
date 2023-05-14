@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Menu List</title>
+  </head>
+  <body>
+    <h1>MASALA DHABA</h1>
+    <div id="menu">
+      <%menuList.forEach(item => {%>
+      <div class="menu-item">
+        <img src="/image/chef.png" alt="" />
+        <h2><%=item.FoodName%></h2>
+        <h5><%=item.from%></h5>
+        <div>
+          <h3><%=item.quantity%></h3>
+          <h4>--</h4>
+          <h3>&#8377;<%=item.price%></h3>
+        </div>
+        <button>Order now</button>
+      </div>
+      <%});%>
+    </div>
+  </body>
+</html>

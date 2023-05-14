@@ -1,0 +1,101 @@
+* {
+  font-family: sans-serif;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 25px;
+  color: orangered;
+}
+
+#menu {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+}
+
+.menu-item {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  box-shadow: 0 1px 10px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-item img {
+  width: 80%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 50%;
+  box-shadow: 0 1px 10px gray;
+}
+
+.menu-item h2 {
+  margin-bottom: 0;
+}
+
+.menu-item h5 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: gray;
+}
+
+.menu-item div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-item div h3 {
+  color: orangered;
+}
+.menu-item div h4 {
+  color: gray;
+}
+
+.menu-item button {
+  width: 50%;
+  padding: 10px 12px;
+  font-weight: bold;
+  background-color: white;
+  color: orange;
+  border: 2px solid orange;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-item button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: orange;
+}
+
+@media only screen and (max-width: 820px) {
+  #menu {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  #menu {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5%;
+  }
+}
