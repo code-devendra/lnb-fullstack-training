@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strip</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .box,
+        .box-1 {
+            width: 7%;
+            height: 50px;
+            background-color: orange;
+        }
+
+        .box-1 {
+            background-color: red;
+            height: 40px;
+            align-self: center;
+            width: 5%;
+        }
+
+        .strip-1,
+        .strip-2 {
+            margin: 50px auto;
+            background-color: green;
+            width: 70%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .strip-2 {
+            justify-content: space-between;
+        }
+
+        h3 {
+            width: 70%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Question One</h1>
+    <h3>Strip - 1</h3>
+    <div class="strip-1">
+        <div class="box-1"></div>
+    </div>
+    <h3>Strip - 2</h3>
+    <div class="strip-2">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Blog | About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            text-align: justify;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10%;
+            background-color: rgb(15, 255, 15);
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul li a {
+            color: black;
+            font-weight: 500;
+            transition: all 0.5s;
+        }
+
+        nav ul li {
+            transition: all 0.5s;
+        }
+
+        nav ul li a:hover {
+            color: white;
+        }
+
+        nav ul li:hover {
+            transform: translateY(-5px);
+        }
+
+        .active {
+            color: white;
+        }
+
+        main {
+            margin: 150px 10% 0 10%;
+        }
+
+        main h1 {
+            font-size: 2rem;
+        }
+
+        footer {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(15, 255, 15);
+            text-align: center;
+            color: white;
+        }
+
+        @media only screen and (max-width: 750px) {
+
+            main {
+                margin: 150px 10px 0 10px;
+            }
+
+            nav {
+                padding: 0 10px;
+            }
+
+            nav ul {
+                width: 60%;
+            }
+        }
+
+        @media only screen and (max-width: 460px) {
+            nav {
+                height: 90px;
+                flex-direction: column;
+                padding-bottom: 5px;
+            }
+
+            nav ul {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h3 class="nav-title">MY BLOG</h3>
+        <ul>
+            <li><a href="./home">Home</a></li>
+            <li><a href="./about" class="active">About</a></li>
+            <li><a href="./contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia laborum suscipit, nostrum iure nihil
+            facilis quae maiores ipsam alias tempore ad distinctio. Consectetur, beatae! Vel dignissimos nesciunt id
+            veniam non omnis, et explicabo. dolorum laborum quam veniam maxime molestiae voluptatem beatae minima
+            dolores quia odit consectetur velit illo.
+        </p>
+    </main>
+    <footer><span>&copy; </span>2023</footer>
+</body>
+
+</html>

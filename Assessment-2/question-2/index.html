@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting</title>
+    <style>
+        h1 {
+            height: 100px;
+            width: 60%;
+            margin: 50px auto;
+            text-align: center;
+            background-color: white;
+            padding-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="greet-msg"></h1>
+
+    <script>
+        let body = document.body;
+        let greet = document.querySelector(".greet-msg");
+        let time = new Date().getHours();
+
+        if (time >= 1 && time < 12) {
+            greet.textContent = "😀 GOOD MORNING 😀";
+            body.style.backgroundColor = "green";
+        } else if (time >= 12 && time < 5) {
+            greet.textContent = "😀 GOOD AFTERNOON 😀";
+            body.style.backgroundColor = "orange";
+        } else {
+            greet.textContent = "😀 GOOD EVENING 😀";
+            body.style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+
+</html>

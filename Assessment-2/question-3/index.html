@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Throw</title>
+    <style>
+        .dice-button {
+            display: block;
+            width: 200px;
+            height: auto;
+            border: 5px solid blueviolet;
+            border-radius: 10px;
+            background-color: azure;
+            margin: 50px auto;
+            padding: 20px 10px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .img-div {
+            width: 700px;
+            height: 300px;
+            padding: 20px 0;
+            margin: 30px auto;
+            border: 5px dashed black;
+            display: flex;
+            position: relative;
+        }
+
+        img {
+            width: 170px;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .player-1 {
+            position: absolute;
+            bottom: 10px;
+            left: 120px;
+        }
+
+        .player-2 {
+            position: absolute;
+            bottom: 10px;
+            right: 120px;
+        }
+
+        .result {
+            text-align: center;
+            font-size: 30px;
+            font-size: bold;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" class="dice-button">Throw the Dice</button>
+    <div class="img-div">
+        <h3 class="player-1">Player - 1</h3>
+        <h3 class="player-2">Player - 2</h3>
+        <img src="./images/d1.jpg" alt="dice-img" class="img-1">
+        <img src="./images/d2.jpg" alt="dice-img" class="img-2">
+    </div>
+
+    <div class="result">Player-2 is win</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(".dice-button").on("click", function () {
+            let diceNum1 = Math.trunc(Math.random() * 6 + 1);
+            let diceNum2 = Math.trunc(Math.random() * 6 + 1);
+            $(".img-1").attr("src", `./images/d${diceNum1}.jpg`);
+            $(".img-2").attr("src", `./images/d${diceNum2}.jpg`);
+            if (diceNum1 > diceNum2) {
+                $(".result").text("Player - 1 is win");
+            } else if (diceNum1 < diceNum2) {
+                $(".result").text("Player - 2 is win");
+            } else {
+                $(".result").text("Match is draw");
+            }
+        });
+    </script>
+</body>
+
+</html>
