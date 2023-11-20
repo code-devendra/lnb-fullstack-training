@@ -1,0 +1,30 @@
+
+.card{
+    margin-top: 100px;
+}
+.login-div{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    /* margin: auto; */
+    height: 300;
+    padding: 10px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.form-control{
+    width: 100%;
+}
+
+.form-group{
+    width: 100%;
+}
+.btn{
+    width: 100%;
+    margin-top: 10px;
+}
